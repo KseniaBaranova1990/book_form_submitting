@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+// import { School } from "./School";
+import NewBook from "./NewBook";
 
+const studentsGrades = [
+  { name: "Naama", grade: "90", id: 0 },
+  { name: "David", grade: "80", id: 1 },
+  { name: "Lior", grade: "95", id: 2 },
+  { name: "Yaniv", grade: "100", id: 3 },
+];
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NewBook />
+      {/* <School school={studentsGrades} /> */}
     </div>
   );
 }
