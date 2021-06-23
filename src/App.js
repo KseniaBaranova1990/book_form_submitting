@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
-// import { School } from "./School";
-import NewBook from "./NewBook";
+import Home from "./Axios";
 
 const studentsGrades = [
   { name: "Naama", grade: "90", id: 0 },
@@ -12,7 +11,7 @@ const studentsGrades = [
 function App() {
   return (
     <div className="App">
-      <NewBook />
+      <Home />
       {/* <School school={studentsGrades} /> */}
     </div>
   );
